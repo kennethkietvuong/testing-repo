@@ -15,14 +15,19 @@
       overflow: hidden;
       border-right: .15em solid orange;
       white-space: nowrap;
-      animation: 
-      typing 1s steps(20, end) forwards;
       font-size: 1.6rem;
       width: 0;
+      animation: 
+        typing 1s steps(20, end) forwards;
+        blink .8s infinite;
     }
     @keyframes typing {
       from { width: 0 }
       to { width: 100% }
+    }
+    @keyframes blink {
+        from { border-color: transparent }
+        to { border-color: orange; }
     }
   </style>
 <body>
